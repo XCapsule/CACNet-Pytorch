@@ -1,7 +1,7 @@
 import os
 
 class Config:
-    KUPCP_dir = '/workspace/dataset/KU_PCP'
+    KUPCP_dir = '/cs/home/alyhc12/data/CACNet/KU_PCP'
 
     image_size = (224,224)
     data_augmentation = True
@@ -9,7 +9,7 @@ class Config:
 
     backbone = 'vgg16'
     # training
-    gpu_id = 1
+    gpu_id = 0
     num_workers = 4
     com_batch_size  = 64
 

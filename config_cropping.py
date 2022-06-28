@@ -1,11 +1,11 @@
 import os
 
 class Config:
-    data_root = '/workspace/aesthetic_cropping/dataset/'
+    data_root = '/cs/home/alyhc12/data/CACNet/'
     predefined_pkl = os.path.join(data_root, 'pdefined_anchors.pkl') # download from https://github.com/luwr1022/listwise-view-ranking/blob/master/pdefined_anchors.pkl
     FCDB_dir = os.path.join(data_root, 'FCDB')
     FLMS_dir = os.path.join(data_root, 'FLMS')
-    KUPCP_dir = '/workspace/aesthetic_cropping/dataset/KU_PCP'
+    KUPCP_dir = '/cs/home/alyhc12/data/CACNet/KU_PCP'
 
     image_size = (224,224)
     data_augmentation = True
@@ -13,7 +13,7 @@ class Config:
 
     backbone = 'vgg16'
     # training
-    gpu_id = 1
+    gpu_id = 0
     num_workers = 8
     crop_batch_size = 8
     com_batch_size  = 64
